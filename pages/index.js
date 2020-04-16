@@ -1,16 +1,9 @@
 import React from 'react'
-import Title from "../components/Title";
-import { Header } from "@aaxis/share-components";
+import Header from "../src/components/Header";
 
 export default () => (
   <div>
     <Header />
-    <Title />
-    <div>
-        <a href='/blog'>Blog</a>
-    </div>
-    <div>
-        <a href="/about">About us</a>
-    </div>
+    <p>Share Components</p>
   </div>
 );

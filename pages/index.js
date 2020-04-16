@@ -1,23 +1,16 @@
-import Link from "next/link";
-import asset from "next/asset";
-import dynamic from "next/dynamic";
-//import { Header } from "with-zones-components";
-//const Header = dynamic(import('../components/Header'))
+import React from 'react'
+import Title from "../components/Title";
+import { Header } from "@aaxis/share-components";
 
 export default () => (
   <div>
-    {/*<Header />*/}
-    <p>This is our homepage</p>
+    <Header />
+    <Title />
     <div>
-      <Link href="/blog">
-        <a>Blog</a>
-      </Link>
+        <a href='/blog'>Blog</a>
     </div>
     <div>
-      <Link href="/about">
-        <a>About us</a>
-      </Link>
+        <a href="/about">About us</a>
     </div>
-    <img width={200} src={asset("/nextjs.png")} />
   </div>
 );

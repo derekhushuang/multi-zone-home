@@ -1,15 +1,40 @@
 {
-  "name": "with-zones-home",
-  "version": "1.0.0",
+  "name": "@aaxis/share-components",
+  "version": "0.0.5",
+  "main": "lib/index.js",
   "scripts": {
-    "dev": "next -p 4000",
+    "dev": "next -p 6100",
     "build": "next build",
-    "start": "next start -p 4000"
+    "start": "next start -p 6100",
+    "compile": "father build",
+    "pub": "npm run compile && npm publish --access=public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DerekHuShuang/multi-zone-share-components"
+  },
+  "keywords": [
+    "sharecomponent",
+    "share",
+    "component",
+    "aaxis"
+  ],
+  "author": "derek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DerekHuShuang/multi-zone-share-components/issues"
+  },
+  "homepage": "https://github.com/DerekHuShuang/multi-zone-share-components",
   "dependencies": {
-    "next": "5.0.0-universal-alpha.15",
-    "react": "16.2.0",
-    "react-dom": "16.2.0"
+    "next": "8.1.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   },
-  "license": "ISC"
+  "devDependencies": {
+    "father": "^2.29.2"
+  },
+  "files": [
+    "lib",
+    "es"
+  ]
 }
